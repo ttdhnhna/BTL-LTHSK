@@ -1,0 +1,25 @@
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.exe
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.deps.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.runtimeconfig.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.pdb
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.AssemblyReference.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Form1.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.GenerateResource.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.GeneratedMSBuildEditorConfig.editorconfig
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfoInputs.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfo.cs
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.CoreCompileInputs.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.sourcelink.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.Up2Date
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\refint\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.pdb
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.genruntimeconfig.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL LTHSK\obj\Debug\net8.0-windows\ref\BTL LTHSK.dll
