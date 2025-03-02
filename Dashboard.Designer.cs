@@ -363,7 +363,7 @@
             panel5.BackColor = Color.FromArgb(255, 128, 0);
             panel5.Controls.Add(label17);
             panel5.Controls.Add(label18);
-            panel5.Location = new Point(606, 233);
+            panel5.Location = new Point(606, 325);
             panel5.Name = "panel5";
             panel5.Size = new Size(142, 63);
             panel5.TabIndex = 14;
