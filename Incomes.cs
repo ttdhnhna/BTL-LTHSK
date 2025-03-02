@@ -31,6 +31,18 @@ namespace BTL_LTHSK
             panel5 = new Panel();
             label17 = new Label();
             label18 = new Label();
+            textBox1 = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            comboBox1 = new ComboBox();
+            label7 = new Label();
+            textBox2 = new TextBox();
+            label8 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            button1 = new Button();
+            button2 = new Button();
+            label9 = new Label();
             panel1.SuspendLayout();
             ((ISupportInitialize)pictureBox4).BeginInit();
             ((ISupportInitialize)pictureBox3).BeginInit();
@@ -127,18 +139,18 @@ namespace BTL_LTHSK
             // 
             // panel5
             // 
-            panel5.BackColor = Color.FromArgb(255, 128, 0);
+            panel5.BackColor = Color.FromArgb(255, 255, 192);
             panel5.Controls.Add(label17);
             panel5.Controls.Add(label18);
-            panel5.Location = new Point(778, 32);
+            panel5.Location = new Point(583, 166);
             panel5.Name = "panel5";
-            panel5.Size = new Size(171, 78);
+            panel5.Size = new Size(254, 145);
             panel5.TabIndex = 15;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(61, 42);
+            label17.Location = new Point(102, 75);
             label17.Name = "label17";
             label17.Size = new Size(51, 15);
             label17.TabIndex = 8;
@@ -147,19 +159,138 @@ namespace BTL_LTHSK
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(56, 20);
+            label18.Location = new Point(97, 53);
             label18.Name = "label18";
-            label18.Size = new Size(61, 15);
+            label18.Size = new Size(64, 15);
             label18.TabIndex = 7;
-            label18.Text = "TONG CHI";
+            label18.Text = "TONG THU";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(251, 166);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(198, 23);
+            textBox1.TabIndex = 16;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(251, 24);
+            label4.Name = "label4";
+            label4.Size = new Size(287, 20);
+            label4.TabIndex = 17;
+            label4.Text = "He thong quan ly tai chinh ca nhan";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(251, 139);
+            label5.Name = "label5";
+            label5.Size = new Size(43, 15);
+            label5.TabIndex = 7;
+            label5.Text = "So tien";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(251, 277);
+            label6.Name = "label6";
+            label6.Size = new Size(48, 15);
+            label6.TabIndex = 18;
+            label6.Text = "The loai";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(251, 300);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(198, 23);
+            comboBox1.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(251, 349);
+            label7.Name = "label7";
+            label7.Size = new Size(48, 15);
+            label7.TabIndex = 20;
+            label7.Text = "Ghi chu";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(251, 376);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(198, 94);
+            textBox2.TabIndex = 21;
+            textBox2.Text = "\r\n";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(251, 202);
+            label8.Name = "label8";
+            label8.Size = new Size(35, 15);
+            label8.TabIndex = 22;
+            label8.Text = "Ngay";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(251, 229);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(198, 23);
+            dateTimePicker1.TabIndex = 24;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Lime;
+            button1.Location = new Point(347, 508);
+            button1.Name = "button1";
+            button1.Size = new Size(146, 50);
+            button1.TabIndex = 25;
+            button1.Text = "LUU";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Location = new Point(583, 508);
+            button2.Name = "button2";
+            button2.Size = new Size(146, 50);
+            button2.TabIndex = 26;
+            button2.Text = "HUY";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label9.Location = new Point(476, 72);
+            label9.Name = "label9";
+            label9.Size = new Size(140, 20);
+            label9.TabIndex = 27;
+            label9.Text = "Them Khoan thu";
             // 
             // Incomes
             // 
             ClientSize = new Size(990, 634);
+            Controls.Add(label9);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(textBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(textBox1);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Name = "Incomes";
-            Text = "Them Khoan Thu";
+            Text = "Khoan Thu";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((ISupportInitialize)pictureBox4).EndInit();
@@ -169,6 +300,7 @@ namespace BTL_LTHSK
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
