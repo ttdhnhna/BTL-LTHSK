@@ -10,25 +10,13 @@ namespace BTL_LTHSK
 {
     internal class Dungchung
     {
-        public string str = @"Data Source=desktop-hnrp7g1\mayao, Database=EIM; Trusted_Connection=True;";
+        public string str = @"Data Source=desktop-hnrp7g1\mayao;Initial Catalog=EIM;Integrated Security=True;";
         public SqlConnection cnn = new SqlConnection();
-        public bool ketnoi()
+
+        public SqlConnection ketnoi()
         {
-            try
-            {
-                if (cnn.State == ConnectionState.Open)
-                {
-                    cnn.Close();
-                }
-                cnn.ConnectionString = str;
-                cnn.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Loi ket noi CSDL", "Thong bao");
-                return false;
-            }
-            return true;
+            return new SqlConnection(str);
         }
     }
+
 }

@@ -47,23 +47,35 @@ namespace BTL_LTHSK
             {
                 MessageBox.Show("2 mat khau khac nhau, can nhap lai!.");
             }
-            else
+            try
+            {            
+                using (SqlConnection conn = c.ketnoi())  // Mở kết nối CSDL
+                {
+                    conn.Open();  // Chỉ mở khi cần thiết
+
+                    string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UN", textBox1.Text);
+                        cmd.Parameters.AddWithValue("@UE", textBox3.Text);
+                        cmd.Parameters.AddWithValue("@UP", textBox2.Text);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Đăng ký tài khoản thành công!");
+                            Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đăng ký thất bại, vui lòng thử lại!");
+                        }
+                    }
+                }  // Tự động đóng kết nối khi thoát khỏi `using`
+            }
+            catch (Exception ex)
             {
-                try
-                {
-                    c.ketnoi();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO tbl VALUES(@UN,@UD,@UP)", c.cnn);//Can bo xung doan nay
-                    cmd.Parameters.AddWithValue("@UN", textBox1.Text);//Ten dang nhap
-                    cmd.Parameters.AddWithValue("@UD", textBox3.Text);//Email
-                    cmd.Parameters.AddWithValue("@Up", textBox2.Text);//Mat khau
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Dang ky tai khoan thanh cong!");
-                    Clear();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 
