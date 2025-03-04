@@ -27,27 +27,46 @@ namespace BTL_LTHSK
         {
 
         }
-
+        public static string User;
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            {
+                MessageBox.Show("Tên đăng nhập và mật khẩu không được để trống!");
+                return;
+            }
+
             Dungchung c = new Dungchung();
             c.ketnoi();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM tbluser WHERE name = '"+textBox1.Text+"' AND password = '"+textBox2.Text+"'", c.cnn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (c.ketnoi()==null)
             {
-                Dashboard obj = new Dashboard();
-                obj.Show();
-                this.Hide();
-                c.cnn.Close();
+                return;
             }
-            else
+            string query = "SELECT COUNT(*) FROM tbluser WHERE name = @username AND password = @password";
+
+            using (SqlCommand cmd = new SqlCommand(query, c.cnn))
             {
-                MessageBox.Show("Sai ten dang nhap hoac mat khau!");
-                textBox1.Text = "";
-                textBox2.Text = "";
+                cmd.Parameters.AddWithValue("@username", textBox1.Text);
+                cmd.Parameters.AddWithValue("@password", textBox2.Text); 
+
+                int count = (int)cmd.ExecuteScalar();
+
+                if (count == 1)
+                {
+                    User = textBox1.Text;
+                    Dashboard obj = new Dashboard();
+                    obj.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                    textBox1.Clear();
+                    textBox2.Clear();
+                }
             }
+
+            c.cnn.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)

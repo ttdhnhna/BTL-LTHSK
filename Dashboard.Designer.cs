@@ -96,6 +96,7 @@
             label3.Size = new Size(50, 15);
             label3.TabIndex = 6;
             label3.Text = "Expense";
+            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -105,6 +106,7 @@
             label2.Size = new Size(47, 15);
             label2.TabIndex = 5;
             label2.Text = "Income";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -168,7 +170,6 @@
             label4.Size = new Size(287, 20);
             label4.TabIndex = 7;
             label4.Text = "He thong quan ly tai chinh ca nhan";
-            label4.Click += label4_Click;
             // 
             // panel2
             // 

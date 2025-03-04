@@ -1,17 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "FXVA2hXbLEE=",
+  "dgSpecHash": "m3wC8K89+B0=",
   "success": true,
   "projectFilePath": "C:\\Code\\BTL LTHSK\\BTL LTHSK.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.commlayer\\13.0.4003\\crystalreports.reportappserver.commlayer.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.commonobjectmodel\\13.0.4003\\crystalreports.reportappserver.commonobjectmodel.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.controllers\\13.0.4003\\crystalreports.reportappserver.controllers.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.cubedefmodel\\13.0.4003\\crystalreports.reportappserver.cubedefmodel.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.datadefmodel\\13.0.4003\\crystalreports.reportappserver.datadefmodel.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.reportappserver.reportdefmodel\\13.0.4003\\crystalreports.reportappserver.reportdefmodel.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\crystalreports.shared\\13.0.4003\\crystalreports.shared.13.0.4003.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.2\\microsoft.bcl.cryptography.9.0.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
@@ -81,76 +73,5 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.web.services.description\\4.10.0\\system.web.services.description.4.10.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\9.0.2\\system.windows.extensions.9.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.CommLayer 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.CommLayer",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.CommonObjectModel 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.CommonObjectModel",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.Controllers 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.Controllers",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.CubeDefModel 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.CubeDefModel",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.DataDefModel 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.DataDefModel",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.ReportAppServer.ReportDefModel 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.ReportAppServer.ReportDefModel",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CrystalReports.Shared 13.0.4003' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CrystalReports.Shared",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
