@@ -167,3 +167,172 @@ C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\th\CrystalDecisions.Shared.resources.
 C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\tr\CrystalDecisions.Shared.resources.dll
 C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\zh-CHS\CrystalDecisions.Shared.resources.dll
 C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\zh-CHT\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.exe
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.deps.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.runtimeconfig.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.pdb
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.Shared.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\log4net.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Win32.Registry.AccessControl.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.CodeDom.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ComponentModel.Composition.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ComponentModel.Composition.Registration.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Data.Odbc.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Data.OleDb.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Diagnostics.PerformanceCounter.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.DirectoryServices.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.DirectoryServices.AccountManagement.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.IO.Packaging.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.IO.Ports.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Management.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Private.ServiceModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Reflection.Context.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Security.Cryptography.Xml.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Security.Permissions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.Duplex.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.Http.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.NetTcp.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.Primitives.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.Security.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceModel.Syndication.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ServiceProcess.ServiceController.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Speech.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Text.Encoding.CodePages.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Threading.AccessControl.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Web.Services.Description.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Windows.Extensions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\cs\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\da\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\de\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\en\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\es\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fi\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fr\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\hu\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\it\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ja\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ko\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\nb-NO\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\nl\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pl\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pt\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ru\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\sk\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\sv\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\th\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\tr\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-CHS\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-CHT\CrystalDecisions.Shared.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\cs\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\de\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\es\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fr\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\it\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ja\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ko\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pl\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ru\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\tr\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\cs\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\de\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\es\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fr\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\it\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ja\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ko\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pl\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pt-BR\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ru\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\tr\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-Hans\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-Hant\System.Web.Services.Description.resources.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.Registry.AccessControl.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.Odbc.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.Odbc.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.OleDb.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.AccountManagement.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Text.Encoding.CodePages.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Threading.AccessControl.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.AssemblyReference.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Dashboard.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.ExpenseDetail.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Expenses.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.IncomeDetail.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Incomes.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Login.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Properties.Resources.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Register.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.GenerateResource.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.GeneratedMSBuildEditorConfig.editorconfig
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfoInputs.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfo.cs
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.CoreCompileInputs.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.sourcelink.json
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.Up2Date
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\refint\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.pdb
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.genruntimeconfig.cache
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\ref\BTL LTHSK.dll
