@@ -27,26 +27,54 @@ namespace BTL_LTHSK
         {
 
         }
-
+        public static string User;
         private void button1_Click(object sender, EventArgs e)
         {
-            Dungchung c = new Dungchung();
-            c.ketnoi();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM tbluser WHERE name = '"+textBox1.Text+"' AND password = '"+textBox2.Text+"'", c.cnn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
-                Dashboard obj = new Dashboard();
-                obj.Show();
-                this.Hide();
-                c.cnn.Close();
+                MessageBox.Show("Tên đăng nhập và mật khẩu không được để trống!");
+                return;
             }
-            else
+
+            Dungchung c = new Dungchung();
+            using (SqlConnection cnn = c.ketnoi()) // Lấy kết nối đã mở
             {
-                MessageBox.Show("Sai ten dang nhap hoac mat khau!");
-                textBox1.Text = "";
-                textBox2.Text = "";
+                if (cnn == null)
+                {
+                    MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu!");
+                    return;
+                }
+
+                string query = "SELECT COUNT(*) FROM tbluser WHERE name = @username AND password = @password";
+
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    cmd.Parameters.AddWithValue("@username", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@password", textBox2.Text);
+
+                    try
+                    {
+                        int count = (int)cmd.ExecuteScalar(); // Thực thi truy vấn
+
+                        if (count == 1)
+                        {
+                            User = textBox1.Text;
+                            Dashboard obj = new Dashboard();
+                            obj.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                            textBox1.Clear();
+                            textBox2.Clear();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi truy vấn: " + ex.Message);
+                    }
+                }
             }
         }
 

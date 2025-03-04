@@ -7,9 +7,18 @@ namespace BTL_LTHSK
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
+            Incomes obj = new Incomes();
+            obj.Show();
+            this.Hide();
+        }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Expenses obj = new Expenses();
+            obj.Show();
+            this.Hide();
         }
     }
 }

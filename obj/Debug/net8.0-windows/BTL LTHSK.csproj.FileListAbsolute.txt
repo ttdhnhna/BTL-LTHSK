@@ -172,14 +172,6 @@ D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\B
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.runtimeconfig.json
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.pdb
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommLayer.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.Controllers.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CubeDefModel.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.DataDefModel.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.ReportDefModel.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.Shared.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\log4net.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
@@ -223,28 +215,6 @@ D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\S
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Threading.AccessControl.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Web.Services.Description.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Windows.Extensions.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\cs\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\da\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\de\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\en\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\es\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fi\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\fr\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\hu\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\it\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ja\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ko\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\nb-NO\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\nl\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pl\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\pt\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\ru\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\sk\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\sv\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\th\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\tr\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-CHS\CrystalDecisions.Shared.resources.dll
-D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\zh-CHT\CrystalDecisions.Shared.resources.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\cs\System.Private.ServiceModel.resources.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\de\System.Private.ServiceModel.resources.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\es\System.Private.ServiceModel.resources.dll

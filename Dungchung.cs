@@ -10,12 +10,21 @@ namespace BTL_LTHSK
 {
     internal class Dungchung
     {
-        public string str = @"Data Source=desktop-hnrp7g1\mayao;Initial Catalog=EIM;Integrated Security=True;";
-        public SqlConnection cnn = new SqlConnection();
+        private readonly string str = @"Data Source=desktop-hnrp7g1\mayao;Initial Catalog=EIM;Integrated Security=True;";
 
         public SqlConnection ketnoi()
         {
-            return new SqlConnection(str);
+            SqlConnection cnn = new SqlConnection(str);
+            try
+            {
+                cnn.Open(); // Mở kết nối trước khi trả về
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL: " + ex.Message);
+                return null; // Trả về null nếu lỗi
+            }
+            return cnn;
         }
     }
 

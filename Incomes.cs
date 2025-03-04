@@ -92,6 +92,7 @@ namespace BTL_LTHSK
             label1.Size = new Size(64, 15);
             label1.TabIndex = 4;
             label1.Text = "Dashboard";
+            label1.Click += label1_Click;
             // 
             // pictureBox4
             // 
@@ -301,6 +302,13 @@ namespace BTL_LTHSK
             panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
         }
     }
 }
