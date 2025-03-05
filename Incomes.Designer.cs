@@ -31,17 +31,17 @@
         private Panel panel5;
         private Label label17;
         private Label label18;
-        private TextBox textBox1;
+        private TextBox Amount;
         private Label label4;
         private Label label5;
         private Label label6;
-        private ComboBox comboBox1;
+        private ComboBox category;
         private Label label7;
-        private TextBox textBox2;
+        private TextBox description;
         private Label label8;
         private DateTimePicker dateTimePicker1;
-        private Button button1;
-        private Button button2;
+        private Button savebutton;
+        private Button cancerbutton;
         private Label label9;
     }
 }

@@ -31,17 +31,17 @@ namespace BTL_LTHSK
             panel5 = new Panel();
             label17 = new Label();
             label18 = new Label();
-            textBox1 = new TextBox();
+            Amount = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            comboBox1 = new ComboBox();
+            category = new ComboBox();
             label7 = new Label();
-            textBox2 = new TextBox();
+            description = new TextBox();
             label8 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            button1 = new Button();
-            button2 = new Button();
+            savebutton = new Button();
+            cancerbutton = new Button();
             label9 = new Label();
             panel1.SuspendLayout();
             ((ISupportInitialize)pictureBox4).BeginInit();
@@ -166,12 +166,12 @@ namespace BTL_LTHSK
             label18.TabIndex = 7;
             label18.Text = "TONG THU";
             // 
-            // textBox1
+            // Amount
             // 
-            textBox1.Location = new Point(251, 166);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(198, 23);
-            textBox1.TabIndex = 16;
+            Amount.Location = new Point(251, 166);
+            Amount.Name = "Amount";
+            Amount.Size = new Size(198, 23);
+            Amount.TabIndex = 16;
             // 
             // label4
             // 
@@ -201,13 +201,13 @@ namespace BTL_LTHSK
             label6.TabIndex = 18;
             label6.Text = "The loai";
             // 
-            // comboBox1
+            // category
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(251, 300);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(198, 23);
-            comboBox1.TabIndex = 19;
+            category.FormattingEnabled = true;
+            category.Location = new Point(251, 300);
+            category.Name = "category";
+            category.Size = new Size(198, 23);
+            category.TabIndex = 19;
             // 
             // label7
             // 
@@ -218,14 +218,14 @@ namespace BTL_LTHSK
             label7.TabIndex = 20;
             label7.Text = "Ghi chu";
             // 
-            // textBox2
+            // description
             // 
-            textBox2.Location = new Point(251, 376);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(198, 94);
-            textBox2.TabIndex = 21;
-            textBox2.Text = "\r\n";
+            description.Location = new Point(251, 376);
+            description.Multiline = true;
+            description.Name = "description";
+            description.Size = new Size(198, 94);
+            description.TabIndex = 21;
+            description.Text = "\r\n";
             // 
             // label8
             // 
@@ -243,25 +243,26 @@ namespace BTL_LTHSK
             dateTimePicker1.Size = new Size(198, 23);
             dateTimePicker1.TabIndex = 24;
             // 
-            // button1
+            // savebutton
             // 
-            button1.BackColor = Color.Lime;
-            button1.Location = new Point(347, 508);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 50);
-            button1.TabIndex = 25;
-            button1.Text = "LUU";
-            button1.UseVisualStyleBackColor = false;
+            savebutton.BackColor = Color.Lime;
+            savebutton.Location = new Point(347, 508);
+            savebutton.Name = "savebutton";
+            savebutton.Size = new Size(146, 50);
+            savebutton.TabIndex = 25;
+            savebutton.Text = "LUU";
+            savebutton.UseVisualStyleBackColor = false;
+            savebutton.Click += savebutton_Click;
             // 
-            // button2
+            // cancerbutton
             // 
-            button2.BackColor = Color.Red;
-            button2.Location = new Point(583, 508);
-            button2.Name = "button2";
-            button2.Size = new Size(146, 50);
-            button2.TabIndex = 26;
-            button2.Text = "HUY";
-            button2.UseVisualStyleBackColor = false;
+            cancerbutton.BackColor = Color.Red;
+            cancerbutton.Location = new Point(583, 508);
+            cancerbutton.Name = "cancerbutton";
+            cancerbutton.Size = new Size(146, 50);
+            cancerbutton.TabIndex = 26;
+            cancerbutton.Text = "HUY";
+            cancerbutton.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -277,17 +278,17 @@ namespace BTL_LTHSK
             // 
             ClientSize = new Size(990, 634);
             Controls.Add(label9);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(cancerbutton);
+            Controls.Add(savebutton);
             Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(description);
+            Controls.Add(category);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(Amount);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Name = "Incomes";
@@ -309,6 +310,19 @@ namespace BTL_LTHSK
             Dashboard obj = new Dashboard();
             obj.Show();
             this.Hide();
+        }
+
+        private void savebutton_Click(object sender, EventArgs e)
+        {
+            Dungchung c = new Dungchung();
+            if (Amount.Text == "")
+            {
+                MessageBox.Show("Chua them so tien! Can bo sung");
+            }
+            if (aAmount.Text == "")
+            {
+                MessageBox.Show("Chua them so tien! Can bo sung");
+            }
         }
     }
 }
