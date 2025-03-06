@@ -137,36 +137,6 @@ C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\refint\BTL LTHSK.dll
 C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.pdb
 C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.genruntimeconfig.cache
 C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\ref\BTL LTHSK.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommLayer.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.Controllers.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.CubeDefModel.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.DataDefModel.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.ReportAppServer.ReportDefModel.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\CrystalDecisions.Shared.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\log4net.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\cs\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\da\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\de\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\en\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\es\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\fi\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\fr\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\hu\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\it\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\ja\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\ko\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\nb-NO\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\nl\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\pl\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\pt\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\ru\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\sk\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\sv\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\th\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\tr\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\zh-CHS\CrystalDecisions.Shared.resources.dll
-C:\Code\BTL LTHSK\bin\Debug\net8.0-windows\zh-CHT\CrystalDecisions.Shared.resources.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.exe
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.deps.json
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\BTL LTHSK.runtimeconfig.json
