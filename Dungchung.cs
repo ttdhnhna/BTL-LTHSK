@@ -26,6 +26,12 @@ namespace BTL_LTHSK
             }
             return cnn;
         }
+        public void dongKetNoi(SqlConnection cnn)
+        {
+            if (cnn != null && cnn.State == ConnectionState.Open)
+            {
+                cnn.Close();
+            }
+        }
     }
-
 }

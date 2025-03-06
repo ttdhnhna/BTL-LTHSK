@@ -321,6 +321,10 @@ namespace BTL_LTHSK
         private void savebutton_Click(object sender, EventArgs e)
         {
             Dungchung c = new Dungchung();
+            SqlConnection conn = c.ketnoi();
+
+            if (conn == null) return;
+
             if (string.IsNullOrWhiteSpace(Amount.Text))
             {
                 MessageBox.Show("Chưa nhập số tiền! Vui lòng bổ sung.");
@@ -343,38 +347,37 @@ namespace BTL_LTHSK
             }
             try
             {
-                using(SqlConnection conn = c.ketnoi())
+                string query = "INSERT INTO tblincome(user_id, amount, date, category, description) VALUES(@IU, @IA, @ID, @IC, @IN)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    conn.Open();  // Chỉ mở khi cần thiết
+                    cmd.Parameters.AddWithValue("@IU", Login.User);
+                    cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
+                    cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Text);
+                    cmd.Parameters.AddWithValue("@IC", category.SelectedIndex);
+                    cmd.Parameters.AddWithValue("@IN", description.Text);
 
-                    string query = "INSERT INTO tblincome(user_id, amount, date, category, description) VALUES(@IU, @IA, @ID, @IC, @IN)";
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
                     {
-                        cmd.Parameters.AddWithValue("@IU", Login.User);
-                        cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
-                        cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Text);
-                        cmd.Parameters.AddWithValue("@IC", category.SelectedIndex);
-                        cmd.Parameters.AddWithValue("@IN", description.Text);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Thêm mới khoản thu thành công!");
-                            Amount.Clear();
-                            dateTimePicker1.Value = DateTime.Now; // Reset ngày về hiện tại
-                            category.SelectedIndex = -1; // Đặt lại lựa chọn danh mục
-                            description.Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Thêm mới thất bại, vui lòng thử lại!");
-                        }
+                        MessageBox.Show("Thêm mới khoản thu thành công!");
+                        Amount.Clear();
+                        dateTimePicker1.Value = DateTime.Now; // Reset ngày về hiện tại
+                        category.SelectedIndex = -1; // Đặt lại lựa chọn danh mục
+                        description.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm mới thất bại, vui lòng thử lại!");
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                c.dongKetNoi(conn); // Đảm bảo đóng kết nối
             }
         }
     }
