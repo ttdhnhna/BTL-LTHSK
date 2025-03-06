@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BTL_LTHSK
 {
@@ -319,9 +321,51 @@ namespace BTL_LTHSK
             {
                 MessageBox.Show("Chua them so tien! Can bo sung");
             }
-            if (aAmount.Text == "")
+            if (dateTimePicker1.Text == "")
             {
                 MessageBox.Show("Chua them so tien! Can bo sung");
+            }
+            if (category.SelectedIndex == -1)
+            {
+                MessageBox.Show("Chua them so tien! Can bo sung");
+            }
+            if (description.Text == "")
+            {
+                MessageBox.Show("Chua them so tien! Can bo sung");
+            }
+            try
+            {
+                using(SqlConnection conn = c.ketnoi())
+                {
+                    conn.Open();  // Chỉ mở khi cần thiết
+
+                    string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UN", Amount.Text);
+                        cmd.Parameters.AddWithValue("@UE", dateTimePicker1.Text);
+                        cmd.Parameters.AddWithValue("@UP", category.SelectedIndex);
+                        cmd.Parameters.AddWithValue("@UE", description.Text);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Thêm mới khoản thu thành công!");
+                            Amount.Clear();
+                            dateTimePicker1.Text="";
+                            category.SelectedIndex=0;
+                            description.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm mới thất bại, vui lòng thử lại!");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
     }
