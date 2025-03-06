@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Button = System.Windows.Forms.Button;
+using ComboBox = System.Windows.Forms.ComboBox;
+using TextBox = System.Windows.Forms.TextBox;
 
 namespace BTL_LTHSK
 {
@@ -206,6 +209,7 @@ namespace BTL_LTHSK
             // category
             // 
             category.FormattingEnabled = true;
+            category.Items.AddRange(new object[] { "Luong", "Thuong", "Qua tang", "Khac" });
             category.Location = new Point(251, 300);
             category.Name = "category";
             category.Size = new Size(198, 23);
@@ -317,21 +321,25 @@ namespace BTL_LTHSK
         private void savebutton_Click(object sender, EventArgs e)
         {
             Dungchung c = new Dungchung();
-            if (Amount.Text == "")
+            if (string.IsNullOrWhiteSpace(Amount.Text))
             {
-                MessageBox.Show("Chua them so tien! Can bo sung");
+                MessageBox.Show("Chưa nhập số tiền! Vui lòng bổ sung.");
+                return;
             }
-            if (dateTimePicker1.Text == "")
+            if (string.IsNullOrWhiteSpace(dateTimePicker1.Text))
             {
-                MessageBox.Show("Chua them so tien! Can bo sung");
+                MessageBox.Show("Chưa nhập ngày! Vui lòng bổ sung.");
+                return;
             }
             if (category.SelectedIndex == -1)
             {
-                MessageBox.Show("Chua them so tien! Can bo sung");
+                MessageBox.Show("Chưa chọn danh mục! Vui lòng bổ sung.");
+                return;
             }
-            if (description.Text == "")
+            if (string.IsNullOrWhiteSpace(description.Text))
             {
-                MessageBox.Show("Chua them so tien! Can bo sung");
+                MessageBox.Show("Chưa nhập mô tả! Vui lòng bổ sung.");
+                return;
             }
             try
             {
@@ -339,21 +347,22 @@ namespace BTL_LTHSK
                 {
                     conn.Open();  // Chỉ mở khi cần thiết
 
-                    string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
+                    string query = "INSERT INTO tblincome(user_id, amount, date, category, description) VALUES(@IU, @IA, @ID, @IC, @IN)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@UN", Amount.Text);
-                        cmd.Parameters.AddWithValue("@UE", dateTimePicker1.Text);
-                        cmd.Parameters.AddWithValue("@UP", category.SelectedIndex);
-                        cmd.Parameters.AddWithValue("@UE", description.Text);
+                        cmd.Parameters.AddWithValue("@IU", Login.User);
+                        cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
+                        cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Text);
+                        cmd.Parameters.AddWithValue("@IC", category.SelectedIndex);
+                        cmd.Parameters.AddWithValue("@IN", description.Text);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Thêm mới khoản thu thành công!");
                             Amount.Clear();
-                            dateTimePicker1.Text="";
-                            category.SelectedIndex=0;
+                            dateTimePicker1.Value = DateTime.Now; // Reset ngày về hiện tại
+                            category.SelectedIndex = -1; // Đặt lại lựa chọn danh mục
                             description.Clear();
                         }
                         else
