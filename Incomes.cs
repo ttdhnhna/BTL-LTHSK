@@ -350,6 +350,21 @@ namespace BTL_LTHSK
                 string query = "INSERT INTO tblincome(user_id, amount, date, category, description) VALUES(@IU, @IA, @ID, @IC, @IN)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
+                    if (!int.TryParse(Login.User, out int userId))
+                    {
+                        MessageBox.Show("Lỗi: User ID không hợp lệ.");
+                        return;
+                    }
+                    if (!decimal.TryParse(Amount.Text, out decimal amount))
+                    {
+                        MessageBox.Show("Lỗi: Số tiền không hợp lệ.");
+                        return;
+                    }
+                    if (!int.TryParse(category.SelectedItem.ToString(), out int categoryId))
+                    {
+                        MessageBox.Show("Lỗi: Danh mục không hợp lệ.");
+                        return;
+                    }
                     cmd.Parameters.AddWithValue("@IU", Login.User);
                     cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
                     cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Text);
