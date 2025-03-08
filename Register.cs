@@ -27,6 +27,8 @@ namespace BTL_LTHSK
         private void button1_Click(object sender, EventArgs e)
         {
             Dungchung c = new Dungchung();
+            SqlConnection conn = c.ketnoi();
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Thieu thong tin ten dang nhap! Can bo sung.");
@@ -48,34 +50,33 @@ namespace BTL_LTHSK
                 MessageBox.Show("2 mat khau khac nhau, can nhap lai!.");
             }
             try
-            {            
-                using (SqlConnection conn = c.ketnoi())  // Mở kết nối CSDL
+            {
+                string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    conn.Open();  // Chỉ mở khi cần thiết
+                    cmd.Parameters.AddWithValue("@UN", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@UE", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@UP", textBox2.Text);
 
-                    string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
                     {
-                        cmd.Parameters.AddWithValue("@UN", textBox1.Text);
-                        cmd.Parameters.AddWithValue("@UE", textBox3.Text);
-                        cmd.Parameters.AddWithValue("@UP", textBox2.Text);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Đăng ký tài khoản thành công!");
-                            Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Đăng ký thất bại, vui lòng thử lại!");
-                        }
+                        MessageBox.Show("Đăng ký tài khoản thành công!");
+                        Clear();
                     }
-                }  // Tự động đóng kết nối khi thoát khỏi `using`
+                    else
+                    {
+                        MessageBox.Show("Đăng ký thất bại, vui lòng thử lại!");
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                c.dongKetNoi(conn);
             }
         }
 

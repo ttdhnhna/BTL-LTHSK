@@ -360,15 +360,15 @@ namespace BTL_LTHSK
                         MessageBox.Show("Lỗi: Số tiền không hợp lệ.");
                         return;
                     }
-                    if (!int.TryParse(category.SelectedItem.ToString(), out int categoryId))
+                    if (category.SelectedItem==null)
                     {
-                        MessageBox.Show("Lỗi: Danh mục không hợp lệ.");
+                        MessageBox.Show("Chưa chọn danh mục! Vui lòng chọn danh mục.");
                         return;
                     }
                     cmd.Parameters.AddWithValue("@IU", Login.User);
                     cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
-                    cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Text);
-                    cmd.Parameters.AddWithValue("@IC", category.SelectedIndex);
+                    cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@IC", category.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@IN", description.Text);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
