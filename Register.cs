@@ -63,6 +63,9 @@ namespace BTL_LTHSK
                     {
                         MessageBox.Show("Đăng ký tài khoản thành công!");
                         Clear();
+                        Login obj = new Login();
+                        obj.Show();
+                        this.Hide();
                     }
                     else
                     {

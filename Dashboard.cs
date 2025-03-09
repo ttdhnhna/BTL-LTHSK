@@ -20,5 +20,19 @@ namespace BTL_LTHSK
             obj.Show();
             this.Hide();
         }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+            IncomeDetail obj = new IncomeDetail();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+            ExpenseDetail obj = new ExpenseDetail();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

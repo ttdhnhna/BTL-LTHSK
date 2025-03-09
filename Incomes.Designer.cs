@@ -19,15 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
-        private Panel panel1;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private Panel panel5;
         private Label label17;
         private Label label18;
@@ -43,5 +34,13 @@
         private Button savebutton;
         private Button cancerbutton;
         private Label label9;
+        private Panel panel1;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }

@@ -43,12 +43,12 @@
             dateTimePicker1 = new DateTimePicker();
             label8 = new Label();
             label7 = new Label();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
+            description = new TextBox();
+            category = new ComboBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
+            Amount = new TextBox();
             panel5 = new Panel();
             label17 = new Label();
             label18 = new Label();
@@ -78,29 +78,31 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(107, 324);
+            label3.Location = new Point(97, 325);
             label3.Name = "label3";
-            label3.Size = new Size(50, 15);
+            label3.Size = new Size(92, 15);
             label3.TabIndex = 6;
-            label3.Text = "Expense";
+            label3.Text = "Them khoan chi";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(107, 227);
+            label2.Location = new Point(97, 229);
             label2.Name = "label2";
-            label2.Size = new Size(47, 15);
+            label2.Size = new Size(94, 15);
             label2.TabIndex = 5;
-            label2.Text = "Income";
+            label2.Text = "Them khoan thu";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(107, 144);
             label1.Name = "label1";
-            label1.Size = new Size(64, 15);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 4;
-            label1.Text = "Dashboard";
+            label1.Text = "Trang chu";
+            label1.Click += label1_Click;
             // 
             // pictureBox4
             // 
@@ -165,6 +167,7 @@
             button2.TabIndex = 39;
             button2.Text = "HUY";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -175,6 +178,7 @@
             button1.TabIndex = 38;
             button1.Text = "LUU";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // dateTimePicker1
             // 
@@ -201,22 +205,23 @@
             label7.TabIndex = 34;
             label7.Text = "Ghi chu";
             // 
-            // textBox2
+            // description
             // 
-            textBox2.Location = new Point(251, 363);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(198, 94);
-            textBox2.TabIndex = 35;
-            textBox2.Text = "\r\n";
+            description.Location = new Point(251, 363);
+            description.Multiline = true;
+            description.Name = "description";
+            description.Size = new Size(198, 94);
+            description.TabIndex = 35;
+            description.Text = "\r\n";
             // 
-            // comboBox1
+            // category
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(251, 287);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(198, 23);
-            comboBox1.TabIndex = 33;
+            category.FormattingEnabled = true;
+            category.Items.AddRange(new object[] { "An uong", "Di chuyen ", "Mua sam", "Khac" });
+            category.Location = new Point(251, 287);
+            category.Name = "category";
+            category.Size = new Size(198, 23);
+            category.TabIndex = 33;
             // 
             // label6
             // 
@@ -246,12 +251,12 @@
             label4.TabIndex = 31;
             label4.Text = "He thong quan ly tai chinh ca nhan";
             // 
-            // textBox1
+            // Amount
             // 
-            textBox1.Location = new Point(251, 153);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(198, 23);
-            textBox1.TabIndex = 30;
+            Amount.Location = new Point(251, 153);
+            Amount.Name = "Amount";
+            Amount.Size = new Size(198, 23);
+            Amount.TabIndex = 30;
             // 
             // panel5
             // 
@@ -292,12 +297,12 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(description);
+            Controls.Add(category);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(Amount);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Name = "Expenses";
@@ -330,12 +335,12 @@
         private DateTimePicker dateTimePicker1;
         private Label label8;
         private Label label7;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
+        private TextBox description;
+        private ComboBox category;
         private Label label6;
         private Label label5;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox Amount;
         private Panel panel5;
         private Label label17;
         private Label label18;

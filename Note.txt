@@ -1,1 +1,2 @@
-Dang lam do chuc nang them khoan thu
+Da them duoc chuc nang them khoan chi va khoan thu vs co hien duoc khoan thu roi, gio se lam not phan khoan chi va sua 
+lai may cai label de an dc
