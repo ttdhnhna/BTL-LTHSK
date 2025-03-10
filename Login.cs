@@ -55,12 +55,10 @@ namespace BTL_LTHSK
                     try
                     {
                         int count = (int)cmd.ExecuteScalar(); // Thực thi truy vấn
-                        object result = cmd.ExecuteScalar();
 
                         if (count == 1 && result != null)
                         {
                             User = textBox1.Text;
-                            Login.User = result.ToString();
                             Dashboard obj = new Dashboard();
                             obj.Show();
                             this.Hide();

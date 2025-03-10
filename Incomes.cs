@@ -349,14 +349,28 @@ namespace BTL_LTHSK
             }
             try
             {
+                int userId = -1;
+                string getUserIdQuery = "SELECT iduser FROM tbluser WHERE name = @UserName";
+
+                using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
+                {
+                    getUserIdCmd.Parameters.AddWithValue("@UserName", Login.User);
+                    object result = getUserIdCmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        userId = Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi: Không tìm thấy ID người dùng.");
+                        return;
+                    }
+                }
+
                 string query = "INSERT INTO tblincome(user_id, amount, date, category, description) VALUES(@IU, @IA, @ID, @IC, @IN)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    if (!int.TryParse(Login.User, out int userId))
-                    {
-                        MessageBox.Show("Lỗi: User ID không hợp lệ.");
-                        return;
-                    }
                     if (!decimal.TryParse(Amount.Text, out decimal amount))
                     {
                         MessageBox.Show("Lỗi: Số tiền không hợp lệ.");
@@ -367,7 +381,7 @@ namespace BTL_LTHSK
                         MessageBox.Show("Chưa chọn danh mục! Vui lòng chọn danh mục.");
                         return;
                     }
-                    cmd.Parameters.AddWithValue("@IU", Login.User);
+                    cmd.Parameters.AddWithValue("@IU", userId);
                     cmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
                     cmd.Parameters.AddWithValue("@ID", dateTimePicker1.Value);
                     cmd.Parameters.AddWithValue("@IC", category.SelectedItem.ToString());

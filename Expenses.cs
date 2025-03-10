@@ -50,11 +50,25 @@ namespace BTL_LTHSK
                 string query = "INSERT INTO tblexpense(user_id, amount, date, category, description) VALUES(@EU, @EA, @ED, @EC, @EN)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    if (!int.TryParse(Login.User, out int userId))
+                    int userId = -1;
+                    string getUserIdQuery = "SELECT iduser FROM tbluser WHERE name = @UserName";
+
+                    using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
                     {
-                        MessageBox.Show("Lỗi: User ID không hợp lệ.");
-                        return;
+                        getUserIdCmd.Parameters.AddWithValue("@UserName", Login.User);
+                        object result = getUserIdCmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Lỗi: Không tìm thấy ID người dùng.");
+                            return;
+                        }
                     }
+
                     if (!decimal.TryParse(Amount.Text, out decimal amount))
                     {
                         MessageBox.Show("Lỗi: Số tiền không hợp lệ.");
@@ -65,7 +79,7 @@ namespace BTL_LTHSK
                         MessageBox.Show("Chưa chọn danh mục! Vui lòng chọn danh mục.");
                         return;
                     }
-                    cmd.Parameters.AddWithValue("@EU", Login.User);
+                    cmd.Parameters.AddWithValue("@EU", userId);
                     cmd.Parameters.AddWithValue("@EA", decimal.Parse(Amount.Text));
                     cmd.Parameters.AddWithValue("@ED", dateTimePicker1.Value);
                     cmd.Parameters.AddWithValue("@EC", category.SelectedItem.ToString());
