@@ -51,13 +51,49 @@ namespace BTL_LTHSK
          {
             Dungchung c = new Dungchung();
             SqlConnection conn = c.ketnoi();
-            string query = "SELECT * FROM tblexpense WHERE id = " + Login.User;
-            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
-            c.dongKetNoi(conn);
+
+            try
+            {
+                int userId = -1;
+                string getUserIdQuery = "SELECT iduser FROM tbluser WHERE name = @UserName";
+
+                using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
+                {
+                    getUserIdCmd.Parameters.AddWithValue("@UserName", Login.User);
+                    object result = getUserIdCmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        userId = Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi: Không tìm thấy ID người dùng.");
+                        return;
+                    }
+                }
+              
+                string query = "SELECT amount, date, category, description FROM tblexpense WHERE user_id = @UserId";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+
+                    dataGridView1.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                c.dongKetNoi(conn);
+            }
         }
     }
 }
