@@ -30,21 +30,19 @@ namespace BTL_LTHSK
             obj.Show();
             this.Hide();
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
             Incomes obj = new Incomes();
             obj.Show();
             this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label3_Click_1(object sender, EventArgs e)
         {
             Expenses obj = new Expenses();
             obj.Show();
             this.Hide();
         }
-
         private void label19_Click(object sender, EventArgs e)
         {
             ExpenseDetail obj = new ExpenseDetail();
@@ -55,7 +53,7 @@ namespace BTL_LTHSK
         {
             Dungchung c = new Dungchung();
             SqlConnection conn = c.ketnoi();
-            string query = "SELECT * FROM tblincome";
+            string query = "SELECT * FROM tblincome WHERE iduser = "+ Login.User;
             SqlDataAdapter sda = new SqlDataAdapter(query, conn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();

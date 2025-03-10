@@ -205,6 +205,7 @@
             label3.Size = new Size(92, 15);
             label3.TabIndex = 6;
             label3.Text = "Them khoan chi";
+            label3.Click += label3_Click_1;
             // 
             // label2
             // 
@@ -214,6 +215,7 @@
             label2.Size = new Size(94, 15);
             label2.TabIndex = 5;
             label2.Text = "Them khoan thu";
+            label2.Click += label2_Click_1;
             // 
             // label1
             // 

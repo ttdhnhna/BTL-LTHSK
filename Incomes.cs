@@ -236,6 +236,7 @@ namespace BTL_LTHSK
             label1.Size = new Size(59, 15);
             label1.TabIndex = 4;
             label1.Text = "Trang chu";
+            label1.Click += label1_Click;
             // 
             // pictureBox4
             // 
