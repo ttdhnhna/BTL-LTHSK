@@ -56,7 +56,7 @@ namespace BTL_LTHSK
                     {
                         int count = (int)cmd.ExecuteScalar(); // Thực thi truy vấn
 
-                        if (count == 1 && result != null)
+                        if (count == 1)
                         {
                             User = textBox1.Text;
                             Dashboard obj = new Dashboard();

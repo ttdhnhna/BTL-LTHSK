@@ -51,7 +51,7 @@ namespace BTL_LTHSK
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     int userId = -1;
-                    string getUserIdQuery = "SELECT iduser FROM tbluser WHERE name = @UserName";
+                    string getUserIdQuery = "SELECT id FROM tbluser WHERE name = @UserName";
 
                     using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
                     {
