@@ -53,7 +53,7 @@ namespace BTL_LTHSK
         {
             Dungchung c = new Dungchung();
             SqlConnection conn = c.ketnoi();
-            string query = "SELECT * FROM tblincome WHERE iduser = "+ Login.User;
+            string query = "SELECT * FROM tblincome WHERE id = "+ Login.User;
             SqlDataAdapter sda = new SqlDataAdapter(query, conn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
