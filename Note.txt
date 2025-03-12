@@ -1,4 +1,1 @@
-Co 1 vai loi can sua:
-	Loi them thong tin khoan chi va khoan thu bi sai vi no deu cho het id user la 1
-	Loi hien thong tin cung sai vi no chi hien dung 1 dong du lieu va hien sai yeu cau vi co the nhin thay du lieu cua nguoi dung khac.
-	Bang gridview cung co van de vi nhu kieu no co the chinh sua du lieu.
+Them nut dang xuat

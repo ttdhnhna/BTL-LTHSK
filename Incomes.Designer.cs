@@ -35,6 +35,12 @@
         private Button cancerbutton;
         private Label label9;
         private Panel panel1;
+        private Label label23;
+        private PictureBox pictureBox9;
+        private Label label19;
+        private Label label20;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
         private Label label3;
         private Label label2;
         private Label label1;

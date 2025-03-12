@@ -41,6 +41,12 @@ namespace BTL_LTHSK
             cancerbutton = new Button();
             label9 = new Label();
             panel1 = new Panel();
+            label23 = new Label();
+            pictureBox9 = new PictureBox();
+            label19 = new Label();
+            label20 = new Label();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -50,6 +56,9 @@ namespace BTL_LTHSK
             pictureBox1 = new PictureBox();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
+            ((ISupportInitialize)pictureBox9).BeginInit();
+            ((ISupportInitialize)pictureBox7).BeginInit();
+            ((ISupportInitialize)pictureBox8).BeginInit();
             ((ISupportInitialize)pictureBox4).BeginInit();
             ((ISupportInitialize)pictureBox3).BeginInit();
             ((ISupportInitialize)pictureBox2).BeginInit();
@@ -197,6 +206,12 @@ namespace BTL_LTHSK
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(label23);
+            panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(label19);
+            panel1.Controls.Add(label20);
+            panel1.Controls.Add(pictureBox7);
+            panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -206,23 +221,86 @@ namespace BTL_LTHSK
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 634);
+            panel1.Size = new Size(200, 635);
             panel1.TabIndex = 28;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(96, 588);
+            label23.Name = "label23";
+            label23.Size = new Size(61, 15);
+            label23.TabIndex = 12;
+            label23.Text = "Đăng xuất";
+            label23.Click += label23_Click;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.White;
+            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox9.Image = Properties.Resources.business_and_finance;
+            pictureBox9.Location = new Point(12, 571);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(76, 50);
+            pictureBox9.TabIndex = 11;
+            pictureBox9.TabStop = false;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(96, 317);
+            label19.Name = "label19";
+            label19.Size = new Size(86, 15);
+            label19.TabIndex = 10;
+            label19.Text = "Xem khoan chi";
+            label19.Click += label19_Click;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(94, 228);
+            label20.Name = "label20";
+            label20.Size = new Size(88, 15);
+            label20.TabIndex = 9;
+            label20.Text = "Xem khoan thu";
+            label20.Click += label20_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.White;
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox7.Image = Properties.Resources.business_and_finance;
+            pictureBox7.Location = new Point(12, 300);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(76, 50);
+            pictureBox7.TabIndex = 8;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.White;
+            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox8.Image = Properties.Resources.wallet;
+            pictureBox8.Location = new Point(12, 214);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(76, 50);
+            pictureBox8.TabIndex = 7;
+            pictureBox8.TabStop = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(97, 325);
+            label3.Location = new Point(96, 500);
             label3.Name = "label3";
             label3.Size = new Size(92, 15);
             label3.TabIndex = 6;
             label3.Text = "Them khoan chi";
-            label3.Click += label3_Click;
+            label3.Click += label3_Click_1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(97, 229);
+            label2.Location = new Point(94, 403);
             label2.Name = "label2";
             label2.Size = new Size(94, 15);
             label2.TabIndex = 5;
@@ -236,14 +314,14 @@ namespace BTL_LTHSK
             label1.Size = new Size(59, 15);
             label1.TabIndex = 4;
             label1.Text = "Trang chu";
-            label1.Click += label1_Click;
+            label1.Click += label1_Click_1;
             // 
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.White;
             pictureBox4.BorderStyle = BorderStyle.FixedSingle;
             pictureBox4.Image = Properties.Resources.business_and_finance;
-            pictureBox4.Location = new Point(12, 307);
+            pictureBox4.Location = new Point(12, 483);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(76, 50);
             pictureBox4.TabIndex = 3;
@@ -254,7 +332,7 @@ namespace BTL_LTHSK
             pictureBox3.BackColor = Color.White;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             pictureBox3.Image = Properties.Resources.wallet;
-            pictureBox3.Location = new Point(12, 213);
+            pictureBox3.Location = new Point(12, 389);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(76, 50);
             pictureBox3.TabIndex = 2;
@@ -305,19 +383,15 @@ namespace BTL_LTHSK
             panel5.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((ISupportInitialize)pictureBox9).EndInit();
+            ((ISupportInitialize)pictureBox7).EndInit();
+            ((ISupportInitialize)pictureBox8).EndInit();
             ((ISupportInitialize)pictureBox4).EndInit();
             ((ISupportInitialize)pictureBox3).EndInit();
             ((ISupportInitialize)pictureBox2).EndInit();
             ((ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Dashboard obj = new Dashboard();
-            obj.Show();
-            this.Hide();
         }
 
         private void savebutton_Click(object sender, EventArgs e)
@@ -423,9 +497,42 @@ namespace BTL_LTHSK
             description.Clear();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label23_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login.User = "";
+                Login obj = new Login();
+                obj.Show();
+                this.Close();
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
         {
             Expenses obj = new Expenses();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+            IncomeDetail obj = new IncomeDetail();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+            ExpenseDetail obj = new ExpenseDetail();
             obj.Show();
             this.Hide();
         }
