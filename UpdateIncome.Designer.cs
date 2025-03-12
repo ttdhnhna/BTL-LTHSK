@@ -1,6 +1,6 @@
 ﻿namespace BTL_LTHSK
 {
-    partial class Expenses
+    partial class UpdateIncome
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expenses));
-            label9 = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            label8 = new Label();
-            label7 = new Label();
-            description = new TextBox();
-            category = new ComboBox();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            Amount = new TextBox();
-            panel5 = new Panel();
-            label17 = new Label();
-            label18 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateIncome));
             panel1 = new Panel();
             label23 = new Label();
             pictureBox9 = new PictureBox();
@@ -58,7 +43,21 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            panel5.SuspendLayout();
+            label9 = new Label();
+            cancerbutton = new Button();
+            savebutton = new Button();
+            dateTimePicker1 = new DateTimePicker();
+            label8 = new Label();
+            label7 = new Label();
+            Description = new TextBox();
+            Category = new ComboBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            Amount = new TextBox();
+            panel5 = new Panel();
+            label17 = new Label();
+            label18 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -67,145 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label9.Location = new Point(476, 72);
-            label9.Name = "label9";
-            label9.Size = new Size(137, 20);
-            label9.TabIndex = 40;
-            label9.Text = "Them Khoan chi";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Location = new Point(589, 512);
-            button2.Name = "button2";
-            button2.Size = new Size(146, 50);
-            button2.TabIndex = 39;
-            button2.Text = "HUY";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Lime;
-            button1.Location = new Point(353, 512);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 50);
-            button1.TabIndex = 38;
-            button1.Text = "LUU";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(251, 216);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(198, 23);
-            dateTimePicker1.TabIndex = 37;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(251, 189);
-            label8.Name = "label8";
-            label8.Size = new Size(35, 15);
-            label8.TabIndex = 36;
-            label8.Text = "Ngay";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(251, 336);
-            label7.Name = "label7";
-            label7.Size = new Size(48, 15);
-            label7.TabIndex = 34;
-            label7.Text = "Ghi chu";
-            // 
-            // description
-            // 
-            description.Location = new Point(251, 363);
-            description.Multiline = true;
-            description.Name = "description";
-            description.Size = new Size(198, 94);
-            description.TabIndex = 35;
-            description.Text = "\r\n";
-            // 
-            // category
-            // 
-            category.FormattingEnabled = true;
-            category.Items.AddRange(new object[] { "An uong", "Di chuyen ", "Mua sam", "Khac" });
-            category.Location = new Point(251, 287);
-            category.Name = "category";
-            category.Size = new Size(198, 23);
-            category.TabIndex = 33;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(251, 264);
-            label6.Name = "label6";
-            label6.Size = new Size(48, 15);
-            label6.TabIndex = 32;
-            label6.Text = "The loai";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(251, 128);
-            label5.Name = "label5";
-            label5.Size = new Size(43, 15);
-            label5.TabIndex = 28;
-            label5.Text = "So tien";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(251, 24);
-            label4.Name = "label4";
-            label4.Size = new Size(287, 20);
-            label4.TabIndex = 31;
-            label4.Text = "He thong quan ly tai chinh ca nhan";
-            // 
-            // Amount
-            // 
-            Amount.Location = new Point(251, 153);
-            Amount.Name = "Amount";
-            Amount.Size = new Size(198, 23);
-            Amount.TabIndex = 30;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(255, 128, 0);
-            panel5.Controls.Add(label17);
-            panel5.Controls.Add(label18);
-            panel5.Location = new Point(589, 170);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(254, 145);
-            panel5.TabIndex = 29;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(102, 75);
-            label17.Name = "label17";
-            label17.Size = new Size(51, 15);
-            label17.TabIndex = 8;
-            label17.Text = "Amount";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(97, 53);
-            label18.Name = "label18";
-            label18.Size = new Size(61, 15);
-            label18.TabIndex = 7;
-            label18.Text = "TONG CHI";
             // 
             // panel1
             // 
@@ -223,10 +85,10 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(1, 0);
+            panel1.Location = new Point(1, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 635);
-            panel1.TabIndex = 41;
+            panel1.TabIndex = 42;
             // 
             // label23
             // 
@@ -236,7 +98,6 @@
             label23.Size = new Size(61, 15);
             label23.TabIndex = 12;
             label23.Text = "Đăng xuất";
-            label23.Click += label23_Click;
             // 
             // pictureBox9
             // 
@@ -257,7 +118,6 @@
             label19.Size = new Size(86, 15);
             label19.TabIndex = 10;
             label19.Text = "Xem khoan chi";
-            label19.Click += label19_Click;
             // 
             // label20
             // 
@@ -267,7 +127,6 @@
             label20.Size = new Size(88, 15);
             label20.TabIndex = 9;
             label20.Text = "Xem khoan thu";
-            label20.Click += label20_Click;
             // 
             // pictureBox7
             // 
@@ -308,7 +167,6 @@
             label2.Size = new Size(94, 15);
             label2.TabIndex = 5;
             label2.Text = "Them khoan thu";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -318,7 +176,6 @@
             label1.Size = new Size(59, 15);
             label1.TabIndex = 4;
             label1.Text = "Trang chu";
-            label1.Click += label1_Click;
             // 
             // pictureBox4
             // 
@@ -364,29 +221,165 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // Expenses
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label9.Location = new Point(477, 73);
+            label9.Name = "label9";
+            label9.Size = new Size(169, 20);
+            label9.TabIndex = 41;
+            label9.Text = "Cap nhat Khoan thu";
+            // 
+            // cancerbutton
+            // 
+            cancerbutton.BackColor = Color.Red;
+            cancerbutton.Location = new Point(584, 509);
+            cancerbutton.Name = "cancerbutton";
+            cancerbutton.Size = new Size(146, 50);
+            cancerbutton.TabIndex = 40;
+            cancerbutton.Text = "HUY";
+            cancerbutton.UseVisualStyleBackColor = false;
+            cancerbutton.Click += cancerbutton_Click;
+            // 
+            // savebutton
+            // 
+            savebutton.BackColor = Color.Lime;
+            savebutton.Location = new Point(348, 509);
+            savebutton.Name = "savebutton";
+            savebutton.Size = new Size(146, 50);
+            savebutton.TabIndex = 39;
+            savebutton.Text = "LUU";
+            savebutton.UseVisualStyleBackColor = false;
+            savebutton.Click += savebutton_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(252, 230);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(198, 23);
+            dateTimePicker1.TabIndex = 38;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(252, 203);
+            label8.Name = "label8";
+            label8.Size = new Size(35, 15);
+            label8.TabIndex = 37;
+            label8.Text = "Ngay";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(252, 350);
+            label7.Name = "label7";
+            label7.Size = new Size(48, 15);
+            label7.TabIndex = 35;
+            label7.Text = "Ghi chu";
+            // 
+            // Description
+            // 
+            Description.Location = new Point(252, 377);
+            Description.Multiline = true;
+            Description.Name = "Description";
+            Description.Size = new Size(198, 94);
+            Description.TabIndex = 36;
+            Description.Text = "\r\n";
+            // 
+            // Category
+            // 
+            Category.FormattingEnabled = true;
+            Category.Items.AddRange(new object[] { "Luong", "Thuong", "Qua tang", "Khac" });
+            Category.Location = new Point(252, 301);
+            Category.Name = "Category";
+            Category.Size = new Size(198, 23);
+            Category.TabIndex = 34;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(252, 278);
+            label6.Name = "label6";
+            label6.Size = new Size(48, 15);
+            label6.TabIndex = 33;
+            label6.Text = "The loai";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(252, 140);
+            label5.Name = "label5";
+            label5.Size = new Size(43, 15);
+            label5.TabIndex = 29;
+            label5.Text = "So tien";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(252, 25);
+            label4.Name = "label4";
+            label4.Size = new Size(287, 20);
+            label4.TabIndex = 32;
+            label4.Text = "He thong quan ly tai chinh ca nhan";
+            // 
+            // Amount
+            // 
+            Amount.Location = new Point(252, 167);
+            Amount.Name = "Amount";
+            Amount.Size = new Size(198, 23);
+            Amount.TabIndex = 31;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(255, 255, 192);
+            panel5.Controls.Add(label17);
+            panel5.Controls.Add(label18);
+            panel5.Location = new Point(584, 167);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(254, 145);
+            panel5.TabIndex = 30;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(102, 75);
+            label17.Name = "label17";
+            label17.Size = new Size(51, 15);
+            label17.TabIndex = 8;
+            label17.Text = "Amount";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(97, 53);
+            label18.Name = "label18";
+            label18.Size = new Size(64, 15);
+            label18.TabIndex = 7;
+            label18.Text = "TONG THU";
+            // 
+            // UpdateIncome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(990, 634);
             Controls.Add(panel1);
             Controls.Add(label9);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(cancerbutton);
+            Controls.Add(savebutton);
             Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(description);
-            Controls.Add(category);
+            Controls.Add(Description);
+            Controls.Add(Category);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(Amount);
             Controls.Add(panel5);
-            Name = "Expenses";
-            Text = "Khoan Chi";
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
+            Name = "UpdateIncome";
+            Text = "UpdateIncome";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -396,26 +389,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label9;
-        private Button button2;
-        private Button button1;
-        private DateTimePicker dateTimePicker1;
-        private Label label8;
-        private Label label7;
-        private TextBox description;
-        private ComboBox category;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private TextBox Amount;
-        private Panel panel5;
-        private Label label17;
-        private Label label18;
+
         private Panel panel1;
         private Label label23;
         private PictureBox pictureBox9;
@@ -430,5 +411,20 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private Label label9;
+        private Button cancerbutton;
+        private Button savebutton;
+        private DateTimePicker dateTimePicker1;
+        private Label label8;
+        private Label label7;
+        private TextBox Description;
+        private ComboBox Category;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private TextBox Amount;
+        private Panel panel5;
+        private Label label17;
+        private Label label18;
     }
 }

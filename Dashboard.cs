@@ -1,4 +1,4 @@
-namespace BTL_LTHSK
+﻿namespace BTL_LTHSK
 {
     public partial class Dashboard : Form
     {
@@ -33,6 +33,18 @@ namespace BTL_LTHSK
             ExpenseDetail obj = new ExpenseDetail();
             obj.Show();
             this.Hide();
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login.User = "";
+                Login obj = new Login();
+                obj.Show();
+                this.Close();
+            }
         }
     }
 }

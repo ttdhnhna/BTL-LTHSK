@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
+            label23 = new Label();
+            pictureBox9 = new PictureBox();
             label19 = new Label();
             label20 = new Label();
             pictureBox7 = new PictureBox();
@@ -59,12 +61,13 @@
             label16 = new Label();
             pictureBox6 = new PictureBox();
             panel4 = new Panel();
-            label21 = new Label();
-            label22 = new Label();
-            panel5 = new Panel();
             label17 = new Label();
             label18 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            pictureBox10 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -76,12 +79,14 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(label23);
+            panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(label19);
             panel1.Controls.Add(label20);
             panel1.Controls.Add(pictureBox7);
@@ -97,6 +102,27 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 635);
             panel1.TabIndex = 0;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(96, 588);
+            label23.Name = "label23";
+            label23.Size = new Size(61, 15);
+            label23.TabIndex = 12;
+            label23.Text = "Đăng xuất";
+            label23.Click += label23_Click;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.White;
+            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox9.Image = Properties.Resources.business_and_finance;
+            pictureBox9.Location = new Point(12, 571);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(76, 50);
+            pictureBox9.TabIndex = 11;
+            pictureBox9.TabStop = false;
             // 
             // label19
             // 
@@ -233,7 +259,7 @@
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(pictureBox5);
-            panel2.Location = new Point(242, 115);
+            panel2.Location = new Point(640, 325);
             panel2.Name = "panel2";
             panel2.Size = new Size(306, 181);
             panel2.TabIndex = 8;
@@ -385,66 +411,69 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.FromArgb(255, 255, 192);
-            panel4.Controls.Add(label21);
-            panel4.Controls.Add(label22);
-            panel4.Location = new Point(606, 115);
+            panel4.BackColor = Color.Yellow;
+            panel4.Controls.Add(label17);
+            panel4.Controls.Add(label18);
+            panel4.Controls.Add(label24);
+            panel4.Controls.Add(label25);
+            panel4.Controls.Add(pictureBox10);
+            panel4.Location = new Point(242, 108);
             panel4.Name = "panel4";
-            panel4.Size = new Size(142, 63);
+            panel4.Size = new Size(704, 181);
             panel4.TabIndex = 13;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Location = new Point(46, 33);
-            label21.Name = "label21";
-            label21.Size = new Size(51, 15);
-            label21.TabIndex = 8;
-            label21.Text = "Amount";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Location = new Point(41, 11);
-            label22.Name = "label22";
-            label22.Size = new Size(64, 15);
-            label22.TabIndex = 7;
-            label22.Text = "TONG THU";
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(255, 128, 0);
-            panel5.Controls.Add(label17);
-            panel5.Controls.Add(label18);
-            panel5.Location = new Point(606, 325);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(142, 63);
-            panel5.TabIndex = 14;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(46, 33);
+            label17.Location = new Point(173, 107);
             label17.Name = "label17";
-            label17.Size = new Size(51, 15);
-            label17.TabIndex = 8;
-            label17.Text = "Amount";
+            label17.Size = new Size(31, 15);
+            label17.TabIndex = 12;
+            label17.Text = "Date";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(41, 11);
+            label18.Location = new Point(13, 107);
             label18.Name = "label18";
-            label18.Size = new Size(61, 15);
-            label18.TabIndex = 7;
-            label18.Text = "TONG CHI";
+            label18.Size = new Size(154, 15);
+            label18.TabIndex = 11;
+            label18.Text = "LAN GIAO DICH GAN NHAT";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(76, 46);
+            label24.Name = "label24";
+            label24.Size = new Size(51, 15);
+            label24.TabIndex = 8;
+            label24.Text = "Amount";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(72, 20);
+            label25.Name = "label25";
+            label25.Size = new Size(65, 15);
+            label25.TabIndex = 7;
+            label25.Text = "TONG TIEN";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.White;
+            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox10.Image = Properties.Resources.wallet;
+            pictureBox10.Location = new Point(559, 17);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(124, 98);
+            pictureBox10.TabIndex = 7;
+            pictureBox10.TabStop = false;
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(990, 634);
-            Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -454,6 +483,7 @@
             Text = "Trang chu";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -468,8 +498,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -501,15 +530,17 @@
         private Label label15;
         private Label label16;
         private PictureBox pictureBox6;
-        private Panel panel4;
-        private Label label21;
-        private Label label22;
-        private Panel panel5;
-        private Label label17;
-        private Label label18;
         private Label label19;
         private Label label20;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private Label label23;
+        private PictureBox pictureBox9;
+        private Panel panel4;
+        private Label label17;
+        private Label label18;
+        private Label label24;
+        private Label label25;
+        private PictureBox pictureBox10;
     }
 }

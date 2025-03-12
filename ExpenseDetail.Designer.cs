@@ -39,7 +39,9 @@
             label9 = new Label();
             label4 = new Label();
             panel1 = new Panel();
+            label23 = new Label();
             label19 = new Label();
+            pictureBox9 = new PictureBox();
             label20 = new Label();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
@@ -52,6 +54,7 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -62,11 +65,15 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(207, 203);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.Size = new Size(771, 418);
             dataGridView1.TabIndex = 46;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // dateTimePicker1
             // 
@@ -140,7 +147,9 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(label23);
             panel1.Controls.Add(label19);
+            panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(label20);
             panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox8);
@@ -156,6 +165,16 @@
             panel1.Size = new Size(200, 635);
             panel1.TabIndex = 47;
             // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(96, 586);
+            label23.Name = "label23";
+            label23.Size = new Size(61, 15);
+            label23.TabIndex = 49;
+            label23.Text = "Đăng xuất";
+            label23.Click += label23_Click;
+            // 
             // label19
             // 
             label19.AutoSize = true;
@@ -164,6 +183,17 @@
             label19.Size = new Size(86, 15);
             label19.TabIndex = 10;
             label19.Text = "Xem khoan chi";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.White;
+            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox9.Image = Properties.Resources.business_and_finance;
+            pictureBox9.Location = new Point(12, 569);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(76, 50);
+            pictureBox9.TabIndex = 48;
+            pictureBox9.TabStop = false;
             // 
             // label20
             // 
@@ -291,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -324,5 +355,7 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private Label label23;
+        private PictureBox pictureBox9;
     }
 }
