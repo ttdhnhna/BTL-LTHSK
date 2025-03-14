@@ -46,6 +46,8 @@ namespace BTL_LTHSK
                 }
             }
             MessageBox.Show("Cập nhật thành công!");
+            IncomeDetail obj = new IncomeDetail();
+            obj.Show();
             this.Close();
         }
 
@@ -53,12 +55,59 @@ namespace BTL_LTHSK
         {
             Amount.Clear();
             dateTimePicker1.Value = DateTime.Now;
-            Category.SelectedIndex = -1; 
+            Category.SelectedIndex = -1;
             Description.Clear();
 
             IncomeDetail obj = new IncomeDetail();
             obj.Show();
             this.Hide();
+        }
+
+        private void dashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void viewincomes_Click(object sender, EventArgs e)
+        {
+            IncomeDetail obj = new IncomeDetail();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void viewexpenses_Click(object sender, EventArgs e)
+        {
+            ExpenseDetail obj = new ExpenseDetail();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void addincome_Click(object sender, EventArgs e)
+        {
+            Incomes obj = new Incomes();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void addexpense_Click(object sender, EventArgs e)
+        {
+            Expenses obj = new Expenses();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login.User = "";
+                Login obj = new Login();
+                obj.Show();
+                this.Close();
+            }
         }
     }
 }

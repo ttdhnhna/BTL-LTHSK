@@ -142,7 +142,7 @@ namespace BTL_LTHSK
 
                     UpdateIncome updateIncome = new UpdateIncome(id, amount, date, category, description);
                     updateIncome.Show();
-                    DisplayIncomes();
+                    this.Hide();
                 }
                 else if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
                 {

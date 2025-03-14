@@ -137,3 +137,44 @@ D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\r
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.pdb
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.genruntimeconfig.cache
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\ref\BTL LTHSK.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.UpdateIncome.resources
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.UpdateExpense.resources

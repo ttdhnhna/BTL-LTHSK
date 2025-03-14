@@ -29,20 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateIncome));
-            panel1 = new Panel();
-            label23 = new Label();
-            pictureBox9 = new PictureBox();
-            label19 = new Label();
-            label20 = new Label();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             label9 = new Label();
             cancerbutton = new Button();
             savebutton = new Button();
@@ -58,168 +44,30 @@
             panel5 = new Panel();
             label17 = new Label();
             label18 = new Label();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2 = new Panel();
+            logout = new Label();
+            pictureBox5 = new PictureBox();
+            viewexpenses = new Label();
+            viewincomes = new Label();
+            pictureBox6 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            addexpense = new Label();
+            addincome = new Label();
+            dashboard = new Label();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
             panel5.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(224, 224, 224);
-            panel1.Controls.Add(label23);
-            panel1.Controls.Add(pictureBox9);
-            panel1.Controls.Add(label19);
-            panel1.Controls.Add(label20);
-            panel1.Controls.Add(pictureBox7);
-            panel1.Controls.Add(pictureBox8);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(1, 1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(200, 635);
-            panel1.TabIndex = 42;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(96, 588);
-            label23.Name = "label23";
-            label23.Size = new Size(61, 15);
-            label23.TabIndex = 12;
-            label23.Text = "Đăng xuất";
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = Color.White;
-            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox9.Image = Properties.Resources.business_and_finance;
-            pictureBox9.Location = new Point(12, 571);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(76, 50);
-            pictureBox9.TabIndex = 11;
-            pictureBox9.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(96, 317);
-            label19.Name = "label19";
-            label19.Size = new Size(86, 15);
-            label19.TabIndex = 10;
-            label19.Text = "Xem khoan chi";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(94, 228);
-            label20.Name = "label20";
-            label20.Size = new Size(88, 15);
-            label20.TabIndex = 9;
-            label20.Text = "Xem khoan thu";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.White;
-            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox7.Image = Properties.Resources.business_and_finance;
-            pictureBox7.Location = new Point(12, 300);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(76, 50);
-            pictureBox7.TabIndex = 8;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.White;
-            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox8.Image = Properties.Resources.wallet;
-            pictureBox8.Location = new Point(12, 214);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(76, 50);
-            pictureBox8.TabIndex = 7;
-            pictureBox8.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(96, 500);
-            label3.Name = "label3";
-            label3.Size = new Size(92, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Them khoan chi";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(94, 403);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Them khoan thu";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(107, 144);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 15);
-            label1.TabIndex = 4;
-            label1.Text = "Trang chu";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.White;
-            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox4.Image = Properties.Resources.business_and_finance;
-            pictureBox4.Location = new Point(12, 483);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(76, 50);
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.White;
-            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Image = Properties.Resources.wallet;
-            pictureBox3.Location = new Point(12, 389);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(76, 50);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.White;
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 127);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(76, 50);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Properties.Resources.manager;
-            pictureBox1.Location = new Point(43, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(102, 71);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // label9
             // 
@@ -359,12 +207,170 @@
             label18.TabIndex = 7;
             label18.Text = "TONG THU";
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel2.Controls.Add(logout);
+            panel2.Controls.Add(pictureBox5);
+            panel2.Controls.Add(viewexpenses);
+            panel2.Controls.Add(viewincomes);
+            panel2.Controls.Add(pictureBox6);
+            panel2.Controls.Add(pictureBox10);
+            panel2.Controls.Add(addexpense);
+            panel2.Controls.Add(addincome);
+            panel2.Controls.Add(dashboard);
+            panel2.Controls.Add(pictureBox11);
+            panel2.Controls.Add(pictureBox12);
+            panel2.Controls.Add(pictureBox13);
+            panel2.Controls.Add(pictureBox14);
+            panel2.Location = new Point(1, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 635);
+            panel2.TabIndex = 57;
+            // 
+            // logout
+            // 
+            logout.AutoSize = true;
+            logout.Location = new Point(96, 588);
+            logout.Name = "logout";
+            logout.Size = new Size(61, 15);
+            logout.TabIndex = 12;
+            logout.Text = "Đăng xuất";
+            logout.Click += logout_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.White;
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Image = Properties.Resources.business_and_finance;
+            pictureBox5.Location = new Point(12, 571);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(76, 50);
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
+            // viewexpenses
+            // 
+            viewexpenses.AutoSize = true;
+            viewexpenses.Location = new Point(96, 317);
+            viewexpenses.Name = "viewexpenses";
+            viewexpenses.Size = new Size(86, 15);
+            viewexpenses.TabIndex = 10;
+            viewexpenses.Text = "Xem khoan chi";
+            viewexpenses.Click += viewexpenses_Click;
+            // 
+            // viewincomes
+            // 
+            viewincomes.AutoSize = true;
+            viewincomes.Location = new Point(94, 228);
+            viewincomes.Name = "viewincomes";
+            viewincomes.Size = new Size(88, 15);
+            viewincomes.TabIndex = 9;
+            viewincomes.Text = "Xem khoan thu";
+            viewincomes.Click += viewincomes_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.White;
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Image = Properties.Resources.business_and_finance;
+            pictureBox6.Location = new Point(12, 300);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(76, 50);
+            pictureBox6.TabIndex = 8;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.White;
+            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox10.Image = Properties.Resources.wallet;
+            pictureBox10.Location = new Point(12, 214);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(76, 50);
+            pictureBox10.TabIndex = 7;
+            pictureBox10.TabStop = false;
+            // 
+            // addexpense
+            // 
+            addexpense.AutoSize = true;
+            addexpense.Location = new Point(96, 500);
+            addexpense.Name = "addexpense";
+            addexpense.Size = new Size(92, 15);
+            addexpense.TabIndex = 6;
+            addexpense.Text = "Them khoan chi";
+            addexpense.Click += addexpense_Click;
+            // 
+            // addincome
+            // 
+            addincome.AutoSize = true;
+            addincome.Location = new Point(94, 403);
+            addincome.Name = "addincome";
+            addincome.Size = new Size(94, 15);
+            addincome.TabIndex = 5;
+            addincome.Text = "Them khoan thu";
+            addincome.Click += addincome_Click;
+            // 
+            // dashboard
+            // 
+            dashboard.AutoSize = true;
+            dashboard.Location = new Point(107, 144);
+            dashboard.Name = "dashboard";
+            dashboard.Size = new Size(59, 15);
+            dashboard.TabIndex = 4;
+            dashboard.Text = "Trang chu";
+            dashboard.Click += dashboard_Click;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.White;
+            pictureBox11.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox11.Image = Properties.Resources.business_and_finance;
+            pictureBox11.Location = new Point(12, 483);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(76, 50);
+            pictureBox11.TabIndex = 3;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.White;
+            pictureBox12.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox12.Image = Properties.Resources.wallet;
+            pictureBox12.Location = new Point(12, 389);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(76, 50);
+            pictureBox12.TabIndex = 2;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.White;
+            pictureBox13.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(12, 127);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(76, 50);
+            pictureBox13.TabIndex = 1;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.White;
+            pictureBox14.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox14.Image = Properties.Resources.manager;
+            pictureBox14.Location = new Point(43, 24);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(102, 71);
+            pictureBox14.TabIndex = 0;
+            pictureBox14.TabStop = false;
+            // 
             // UpdateIncome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(990, 634);
-            Controls.Add(panel1);
+            Controls.Add(panel2);
             Controls.Add(label9);
             Controls.Add(cancerbutton);
             Controls.Add(savebutton);
@@ -379,38 +385,23 @@
             Controls.Add(Amount);
             Controls.Add(panel5);
             Name = "UpdateIncome";
-            Text = "UpdateIncome";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Text = "Cap nhat khoan thu";
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label label23;
-        private PictureBox pictureBox9;
-        private Label label19;
-        private Label label20;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private Label label9;
         private Button cancerbutton;
         private Button savebutton;
@@ -426,5 +417,19 @@
         private Panel panel5;
         private Label label17;
         private Label label18;
+        private Panel panel2;
+        private Label logout;
+        private PictureBox pictureBox5;
+        private Label viewexpenses;
+        private Label viewincomes;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox10;
+        private Label addexpense;
+        private Label addincome;
+        private Label dashboard;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
     }
 }
