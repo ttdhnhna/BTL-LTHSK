@@ -63,7 +63,7 @@
             panel4 = new Panel();
             label17 = new Label();
             label18 = new Label();
-            label24 = new Label();
+            total_balance = new Label();
             label25 = new Label();
             pictureBox10 = new PictureBox();
             panel1.SuspendLayout();
@@ -414,7 +414,7 @@
             panel4.BackColor = Color.Yellow;
             panel4.Controls.Add(label17);
             panel4.Controls.Add(label18);
-            panel4.Controls.Add(label24);
+            panel4.Controls.Add(total_balance);
             panel4.Controls.Add(label25);
             panel4.Controls.Add(pictureBox10);
             panel4.Location = new Point(242, 108);
@@ -440,14 +440,14 @@
             label18.TabIndex = 11;
             label18.Text = "LAN GIAO DICH GAN NHAT";
             // 
-            // label24
+            // total_balance
             // 
-            label24.AutoSize = true;
-            label24.Location = new Point(76, 46);
-            label24.Name = "label24";
-            label24.Size = new Size(51, 15);
-            label24.TabIndex = 8;
-            label24.Text = "Amount";
+            total_balance.AutoSize = true;
+            total_balance.Location = new Point(76, 46);
+            total_balance.Name = "total_balance";
+            total_balance.Size = new Size(51, 15);
+            total_balance.TabIndex = 8;
+            total_balance.Text = "Amount";
             // 
             // label25
             // 
@@ -539,7 +539,7 @@
         private Panel panel4;
         private Label label17;
         private Label label18;
-        private Label label24;
+        private Label total_balance;
         private Label label25;
         private PictureBox pictureBox10;
     }

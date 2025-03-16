@@ -91,7 +91,7 @@ namespace BTL_LTHSK
                     }
                 }
 
-                string query = "SELECT amount, date, category, description FROM tblexpense WHERE user_id = @UserId";
+                string query = "SELECT id, amount, date, category, description FROM tblexpense WHERE user_id = @UserId";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -133,7 +133,14 @@ namespace BTL_LTHSK
                 string id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
                 if (dataGridView1.Columns[e.ColumnIndex].Name == "Edit")
                 {
+                    string amount = dataGridView1.Rows[e.RowIndex].Cells["amount"].Value.ToString();
+                    string date = dataGridView1.Rows[e.RowIndex].Cells["date"].Value.ToString();
+                    string category = dataGridView1.Rows[e.RowIndex].Cells["category"].Value.ToString();
+                    string description = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
 
+                    UpdateExpense updateExpense = new UpdateExpense(id, amount, date, category, description);
+                    updateExpense.Show();
+                    this.Hide();
                 }
                 else if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
                 {

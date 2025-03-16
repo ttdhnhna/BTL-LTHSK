@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,27 +48,28 @@ namespace BTL_LTHSK
             }
             try
             {
+                int userId = -1;
+                string getUserIdQuery = "SELECT id FROM tbluser WHERE name = @UserName";
+
+                using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
+                {
+                    getUserIdCmd.Parameters.AddWithValue("@UserName", Login.User);
+                    object result = getUserIdCmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        userId = Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi: Không tìm thấy ID người dùng.");
+                        return;
+                    }
+                }
+
                 string query = "INSERT INTO tblexpense(user_id, amount, date, category, description) VALUES(@EU, @EA, @ED, @EC, @EN)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    int userId = -1;
-                    string getUserIdQuery = "SELECT id FROM tbluser WHERE name = @UserName";
-
-                    using (SqlCommand getUserIdCmd = new SqlCommand(getUserIdQuery, conn))
-                    {
-                        getUserIdCmd.Parameters.AddWithValue("@UserName", Login.User);
-                        object result = getUserIdCmd.ExecuteScalar();
-
-                        if (result != null)
-                        {
-                            userId = Convert.ToInt32(result);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Lỗi: Không tìm thấy ID người dùng.");
-                            return;
-                        }
-                    }
 
                     if (!decimal.TryParse(Amount.Text, out decimal amount))
                     {
@@ -101,6 +103,38 @@ namespace BTL_LTHSK
                     {
                         MessageBox.Show("Thêm mới thất bại, vui lòng thử lại!");
                     }
+                }
+
+                string checkBalanceQuery = "SELECT total_balance FROM balance WHERE user_id = @IU";
+                decimal currentBalance = 0;
+
+                using (SqlCommand checkCmd = new SqlCommand(checkBalanceQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@IU", userId);
+                    object balanceResult = checkCmd.ExecuteScalar();
+                    if (balanceResult != null)
+                    {
+                        currentBalance = Convert.ToDecimal(balanceResult);
+                    }
+                }
+               
+                if (currentBalance < decimal.Parse(Amount.Text))
+                {
+                    MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
+                    return; 
+                }
+
+                string updateBalanceQuery = @"
+                    UPDATE balance 
+                    SET total_balance = total_balance - @EA, last_updated = @Date 
+                    WHERE user_id = @IU";
+
+                using (SqlCommand updateCmd = new SqlCommand(updateBalanceQuery, conn))
+                {
+                    updateCmd.Parameters.AddWithValue("@EA", decimal.Parse(Amount.Text));
+                    updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
+                    updateCmd.Parameters.AddWithValue("@IU", userId);
+                    updateCmd.ExecuteScalar();
                 }
             }
             catch (Exception ex)
