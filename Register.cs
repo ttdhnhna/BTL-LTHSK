@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,8 @@ namespace BTL_LTHSK
             }
             try
             {
+                int userId = -1;
+
                 string query = "INSERT INTO tbluser(name, email, password) VALUES(@UN, @UE, @UP)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -58,20 +61,46 @@ namespace BTL_LTHSK
                     cmd.Parameters.AddWithValue("@UE", textBox3.Text);
                     cmd.Parameters.AddWithValue("@UP", textBox2.Text);
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    if (rowsAffected > 0)
+                    //int rowsAffected = cmd.ExecuteNonQuery();
+                    //if (rowsAffected > 0)
+                    //{
+                    //    MessageBox.Show("Đăng ký tài khoản thành công!");
+                    //    Clear();
+                    //    Login obj = new Login();
+                    //    obj.Show();
+                    //    this.Hide();
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Đăng ký thất bại, vui lòng thử lại!");
+                    //}
+
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
                     {
-                        MessageBox.Show("Đăng ký tài khoản thành công!");
-                        Clear();
-                        Login obj = new Login();
-                        obj.Show();
-                        this.Hide();
+                        userId = Convert.ToInt32(result);
                     }
                     else
                     {
-                        MessageBox.Show("Đăng ký thất bại, vui lòng thử lại!");
+                        MessageBox.Show("Lỗi: Không thể lấy ID của tài khoản mới.");
+                        return;
                     }
                 }
+
+                string balancequery = "INSERT INTO tblbalance(user_id, total_balance, last_updated) VALUES(@UI, @TB, @LU)";
+                using (SqlCommand addCmd = new SqlCommand(balancequery, conn))
+                {
+                    addCmd.Parameters.AddWithValue("@UI", userId);
+                    addCmd.Parameters.AddWithValue("@TB", 0);
+                    addCmd.Parameters.AddWithValue("@LU", DateTime.Now);
+                    addCmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Đăng ký tài khoản thành công!");
+                Clear();
+                Login obj = new Login();
+                obj.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

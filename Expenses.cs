@@ -88,8 +88,8 @@ namespace BTL_LTHSK
                     {
                         MessageBox.Show("Thêm mới khoản chi thành công!");
                         Amount.Clear();
-                        dateTimePicker1.Value = DateTime.Now; // Reset ngày về hiện tại
-                        category.SelectedIndex = -1; // Đặt lại lựa chọn danh mục
+                        dateTimePicker1.Value = DateTime.Now; 
+                        category.SelectedIndex = -1; 
                         description.Clear();
                         Dashboard obj = new Dashboard();
                         obj.Show();
