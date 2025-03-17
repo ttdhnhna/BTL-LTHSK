@@ -141,6 +141,7 @@ namespace BTL_LTHSK
                     string description = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
 
                     UpdateIncome updateIncome = new UpdateIncome(id, amount, date, category, description);
+                    this.Hide();
                     updateIncome.Show();
                     this.Hide();
                 }

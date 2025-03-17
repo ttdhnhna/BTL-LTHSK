@@ -478,6 +478,19 @@ namespace BTL_LTHSK
                         MessageBox.Show("Thêm mới thất bại, vui lòng thử lại!");
                     }
                 }
+
+                string updateBalanceQuery = @"
+                    UPDATE tblbalance 
+                    SET total_balance = total_balance + @IA, last_updated = @Date 
+                    WHERE user_id = @IU";
+                using (SqlCommand updateCmd = new SqlCommand(updateBalanceQuery, conn))
+                {
+                    updateCmd.Parameters.AddWithValue("@IA", decimal.Parse(Amount.Text));
+                    updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
+                    updateCmd.Parameters.AddWithValue("@IU", userId);
+                    updateCmd.ExecuteScalar();
+                }
+
             }
             catch (Exception ex)
             {

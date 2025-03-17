@@ -178,3 +178,23 @@ D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\r
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\FITHOU\Lập trình hướng sự kiện\BTL-LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.UpdateExpense.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.AssemblyReference.cache
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Dashboard.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.ExpenseDetail.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Expenses.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.IncomeDetail.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Incomes.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Login.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Properties.Resources.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.Register.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.UpdateExpense.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL_LTHSK.UpdateIncome.resources
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.GenerateResource.cache
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfoInputs.cache
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.AssemblyInfo.cs
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.csproj.CoreCompileInputs.cache
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.sourcelink.json
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.dll
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\refint\BTL LTHSK.dll
+C:\Code\BTL LTHSK\obj\Debug\net8.0-windows\BTL LTHSK.pdb
