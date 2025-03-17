@@ -130,7 +130,7 @@ namespace BTL_LTHSK
                     updateCmd.Parameters.AddWithValue("@EA", amount);
                     updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                     updateCmd.Parameters.AddWithValue("@IU", userId);
-                    updateCmd.ExecuteNonQuery();
+                    updateCmd.ExecuteScalar();
                 }
             }
             catch (Exception ex)

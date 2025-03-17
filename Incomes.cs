@@ -484,7 +484,7 @@ namespace BTL_LTHSK
                     updateCmd.Parameters.AddWithValue("@IA", amount);
                     updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                     updateCmd.Parameters.AddWithValue("@IU", userId);
-                    updateCmd.ExecuteNonQuery();
+                    updateCmd.ExecuteScalar();
                 }
 
             }
