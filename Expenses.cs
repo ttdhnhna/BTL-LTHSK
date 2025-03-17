@@ -41,11 +41,6 @@ namespace BTL_LTHSK
                 MessageBox.Show("Chưa chọn danh mục! Vui lòng bổ sung.");
                 return;
             }
-            if (string.IsNullOrWhiteSpace(description.Text))
-            {
-                MessageBox.Show("Chưa nhập mô tả! Vui lòng bổ sung.");
-                return;
-            }
             try
             {
                 int userId = -1;
@@ -125,7 +120,7 @@ namespace BTL_LTHSK
                 }
 
                 string updateBalanceQuery = @"
-                    UPDATE balance 
+                    UPDATE tblbalance 
                     SET total_balance = total_balance - @EA, last_updated = @Date 
                     WHERE user_id = @IU";
 
@@ -134,7 +129,7 @@ namespace BTL_LTHSK
                     updateCmd.Parameters.AddWithValue("@EA", decimal.Parse(Amount.Text));
                     updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                     updateCmd.Parameters.AddWithValue("@IU", userId);
-                    updateCmd.ExecuteScalar();
+                    updateCmd.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)
