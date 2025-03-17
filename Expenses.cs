@@ -43,6 +43,13 @@ namespace BTL_LTHSK
             }
             try
             {
+                decimal amount;
+                if (!decimal.TryParse(Amount.Text, out amount) || amount <= 0)
+                {
+                    MessageBox.Show("Lỗi: Số tiền không hợp lệ hoặc bằng 0.");
+                    return;
+                }
+
                 int userId = -1;
                 string getUserIdQuery = "SELECT id FROM tbluser WHERE name = @UserName";
 
@@ -65,19 +72,13 @@ namespace BTL_LTHSK
                 string query = "INSERT INTO tblexpense(user_id, amount, date, category, description) VALUES(@EU, @EA, @ED, @EC, @EN)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-
-                    if (!decimal.TryParse(Amount.Text, out decimal amount))
-                    {
-                        MessageBox.Show("Lỗi: Số tiền không hợp lệ.");
-                        return;
-                    }
                     if (category.SelectedItem == null)
                     {
                         MessageBox.Show("Chưa chọn danh mục! Vui lòng chọn danh mục.");
                         return;
                     }
                     cmd.Parameters.AddWithValue("@EU", userId);
-                    cmd.Parameters.AddWithValue("@EA", decimal.Parse(Amount.Text));
+                    cmd.Parameters.AddWithValue("@EA", amount);
                     cmd.Parameters.AddWithValue("@ED", dateTimePicker1.Value);
                     cmd.Parameters.AddWithValue("@EC", category.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@EN", description.Text);
@@ -113,7 +114,7 @@ namespace BTL_LTHSK
                     }
                 }
                
-                if (currentBalance < decimal.Parse(Amount.Text))
+                if (currentBalance < amount)
                 {
                     MessageBox.Show("Số dư không đủ để thực hiện giao dịch này!");
                     return; 
@@ -126,7 +127,7 @@ namespace BTL_LTHSK
 
                 using (SqlCommand updateCmd = new SqlCommand(updateBalanceQuery, conn))
                 {
-                    updateCmd.Parameters.AddWithValue("@EA", decimal.Parse(Amount.Text));
+                    updateCmd.Parameters.AddWithValue("@EA", amount);
                     updateCmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                     updateCmd.Parameters.AddWithValue("@IU", userId);
                     updateCmd.ExecuteNonQuery();
