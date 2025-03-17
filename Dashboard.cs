@@ -8,6 +8,7 @@ namespace BTL_LTHSK
         public Dashboard()
         {
             InitializeComponent();
+            getBalance();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace BTL_LTHSK
                 }
             }
 
-            string getBalanceQuery = "SELECT total_amount FROM balance WHERE user_id = @IU";
+            string getBalanceQuery = "SELECT total_balance FROM tblbalance WHERE user_id = @IU";
 
             using (SqlCommand cmd = new SqlCommand(getBalanceQuery, conn))
             {
